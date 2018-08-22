@@ -17,6 +17,13 @@ My intial attmpt to train a model (based on my work on [digit-recognizer](https:
 
 ### Weeding out non-asana Images
 
+Examining random images for a given asana revealed that a fairly hgih proportion of the images were of too poor a quality to contribute to the accuracy of a model as positive class samples. There are two ways to identify and weed out these poor-quality images:
+    - 1. human effort (MTurk?)
+    - 2. feture extraction & clustering
+    
+
+DB Scan provide a way to cluster images in a flexible enough way to support this use case. However, initial attempts to use the algorithm on a computed cosine similarity matrix of the extracted features failed to extract outliers and resulted in core and non-core samples that didn't differ from eachother in any noticeable way (ay variou slevels of eps and min_samples)
+
 
 ### Model Building
 
