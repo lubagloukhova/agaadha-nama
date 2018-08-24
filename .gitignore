@@ -2,3 +2,6 @@
 .ipynb_checkpoints
 Pictures/
 dataset/
+input_csvs/
+logdir
+modeldir
